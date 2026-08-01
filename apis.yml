@@ -1,8 +1,25 @@
 aid: spruce-finance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spruce-finance.png
 name: Spruce Finance *
-description: 'Spruce Finance * is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Spruce Power operates sprucepower.com as a customer portal ("CustomerPortal") for its
+  residential solar and home energy services, giving homeowners a dashboard to monitor their solar
+  energy systems and production, manage their service agreement, and get in touch with support (public
+  routes include /dashboard, /monitoring, /pro, and /get-in-touch). Surfaced as a GV portfolio company
+  (sector: frontier-tech) and added to the API Evangelist network. Enrichment found no public developer
+  API, developer portal, OpenAPI specification, or working /.well-known/ discovery surface — all
+  /.well-known/ paths return the customer-portal single-page-app shell rather than real documents, and
+  no api./developer./docs. host resolves.'
 url: https://raw.githubusercontent.com/api-evangelist/spruce-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Energy
+- Solar
+- Home Solar
+- Energy Monitoring
+- Customer Portal
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spruce-finance-domain-security.yml
 - type: Website
   url: https://sprucepower.com
+- type: Support
+  url: https://sprucepower.com/get-in-touch
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
